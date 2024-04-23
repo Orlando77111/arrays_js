@@ -42,3 +42,105 @@ let miArray4 = [1, "Dos", true, {nombre: "Juan", edad: 30}];
 console.log(miArray4)
 ```
 
+## Accediendo a la informacion de un array
+
+### Propiedad length
+- Devuelve la cantidad de elementos del array
+
+### Operador [pos]
+- Permite acceder para leer o modificar el elemento pos del array
+
+### Metodo at(pos)
+- Devuelve el elemento de la posicion pos. El parametro admite valores negativos, lo que significa que empiezan a contar por el final del array.
+```Javascript
+const letters = ["A", "B", "C"];
+console.log(letters.length);
+console.log(letters[2]);
+console.log(letters[2]);
+```
+
+## Añadir o eliminar elementos
+- push(ele1,ele2): Añade uno o varios elementos al final del array. Devuelve el tamaño del array.
+
+```Javascript
+let miArray = (1,2,3)
+miArray.push(4); // Agrega el elemento 4 al final del array
+console.log(miArray);
+
+```
+
+- pop(): Devuelve el ultimo elemento del array y lo elimina
+
+```Javascript
+let miArray = (1,2,3)
+miArray.pop(); // Elimina el ultimo elemento del array
+console.log(miArray);
+
+```
+
+- unshift(ele1,ele2): añade varios elementos al inicio, devolviendo el array despues de aññadido
+
+```Javascript
+let miArray = (1,2,3)
+miArray.unshift(0); // agrega el elemento 0 al inicio del array
+console.log(miArray);
+
+```
+
+
+
+
+## Busqueda de elementos en un array
+- includes(elemento): devuelve true o false si el si el elemento existe o no dentro del array
+- indexOf(elemento): Devuelve la primera aparicion del elemento si no existe debuelve -1.
+- lastIndexOf(elemento): Devuelve la posicion del elemento. Si no existe devuelve -1.
+ ## Modificar el array o crear fragmentos
+ - slice(inicio, fin): Devuelve un array con los elementos de la posicion inicio hasta la posicion fin, ambos excluidos.
+
+ ## Ordenar elementos de un array
+ - reverse(): invierte el orden de los elementos del array
+ - sart(): Ordena el array alfabeticamente
+ - sort(criterio): Ordena el array con el criterio determinado por la funcion criterio.
+
+ ## Borrar elementos de un array
+ - se puede borrar el contenido de un elemento array poniendo su valor a null o asignando una cadena vacia " ".
+ - Para eliminar completamente un elemento del array se utiliza el operador delete.
+
+ ## Recorrido de un array
+ 1. Recordatorio con un bucle basico pasando por todos los elementos.
+ ```Javascript
+ var dias = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+ for(i=0;1<dias..lenght;1++)
+ {
+    console.log(dias(1))
+ }
+ ``` 
+ 2. Recordatorio con un while pasando por todos los elementos. 
+
+ 3. usando la sentencia for..in
+ ```Javascript
+  var dias = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+  for(let index in dias)
+  {
+    console.log(dias[index])
+  }
+ ```
+
+ ## Arrays multidimencionales
+ ```Javascript
+ const matrix = {
+    ()
+
+    
+ }
+ ```
+
+# Ejercicios
+
+1. Dada una lista de números separados por coma, calcular la suma, el mayor, el menor y la media de todos.
+
+2. Introducir dos cadenas con elementos seperados por coma, y con un botón concatenar las dos cadenas y mostrarlas en pantalla.
+
+3. Introducir uno a uno los elementos en un array a través de un boton. Con otro botón se va eliminado el último elemento. Siempre que se pulse alguno de los botones de debe mostrar el contenido del array.
+
+4. Introducir un conjunto de números separados por comas. Cuando se pulsa el botón "Pares" cargar una tabla con los números introducidos y luego crear otra que solo incluya los números pares y mostrarla.
